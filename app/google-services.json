@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "772511600534",
+    "project_id": "exciteon-eb912",
+    "storage_bucket": "exciteon-eb912.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:772511600534:android:233465b847b4dbcac257b7",
+        "android_client_info": {
+          "package_name": "com.exciteon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "772511600534-bovo9hnku6hun06m2dmcq1bfshmadhgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8aL5vi_8ITcaYhfN_JUwdAEjuV5B5-fA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "772511600534-bovo9hnku6hun06m2dmcq1bfshmadhgp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
