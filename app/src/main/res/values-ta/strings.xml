@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">தமிழி நோட்ஸ்</string>
-    <string name="thamizhi">தமிழி</string>
-    <string name="notes">நோட்ஸ்</string>
+    <string name="app_name">Exciteon</string>
     <!--  Auth screen  -->
     <string name="log_into_your_account">உங்கள் கணக்கில் உள்நுழைக</string>
     <string name="please_enter_email_or_mobile_number">மின்னஞ்சல் அல்லது மொபைல் எண்ணை உள்ளிடவும்</string>

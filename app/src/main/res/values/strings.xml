@@ -1,7 +1,5 @@
 <resources>
-    <string name="app_name">THAMIZHI NOTES</string>
-    <string name="thamizhi">THAMIZHI</string>
-    <string name="notes">NOTES</string>
+    <string name="app_name">Exciteon</string>
     <!--  Auth screen  -->
     <string name="log_into_your_account">Log into your account</string>
     <string name="please_enter_email_or_mobile_number">Please Enter Email or Mobile number</string>
