@@ -16,6 +16,7 @@ import com.exciteon.ui.auth.otp.LoginOtpFragment
 import com.exciteon.ui.auth.password.CreatePasswordFragment
 import com.exciteon.ui.auth.password.LoginPasswordFragment
 import com.exciteon.ui.base.BaseActivity
+import com.exciteon.ui.home.HomeActivity
 import com.exciteon.utils.AuthUiEvent
 import com.exciteon.utils.RxBus
 import com.exciteon.utils.addFragmentToActivity
@@ -60,9 +61,10 @@ class AuthActivity : BaseActivity<ActivityAuthBinding, AuthViewModel>(),AuthNavi
             when (it) {
                 "gsiSuccess" -> {
                     showSnackBar("success","success","")
+                    moveToHomeActivity()
                 }
                 "success" -> {
-
+                    moveToHomeActivity()
                 }
                 "failure" -> {
                     showSnackBar(getString(R.string.error),getString(R.string.error_while_creating_the_account),"")
@@ -157,8 +159,8 @@ class AuthActivity : BaseActivity<ActivityAuthBinding, AuthViewModel>(),AuthNavi
         viewModel.password.set(password)
         val result = viewModel.signInWithEmailAndPassword()
         if(result==0){
-//            startActivity(Intent(this,HomeActivity::class.java))
-//            finish()
+            startActivity(Intent(this, HomeActivity::class.java))
+            finish()
         }else if(result==1){
             showSnackBar(getString(R.string.invalid),getString(R.string.invalid_email_and_password),"")
             addFragmentToActivity(mBinding.flAuth.id,LoginFragment(),"Login")
@@ -166,8 +168,8 @@ class AuthActivity : BaseActivity<ActivityAuthBinding, AuthViewModel>(),AuthNavi
     }
 
     private fun moveToHomeActivity(){
-//            startActivity(Intent(this,HomeActivity::class.java))
-//            finish()
+            startActivity(Intent(this,HomeActivity::class.java))
+            finish()
     }
 
     private fun gsi(){

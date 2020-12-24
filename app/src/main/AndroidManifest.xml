@@ -12,8 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_icon_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Exciteon">
-        <activity android:name=".ui.auth.AuthActivity"/>
-        <activity android:name=".ui.splash.SplashActivity" android:theme="@style/Theme.Exciteon.Blue">
+        <activity android:name=".ui.home.HomeActivity"></activity>
+        <activity android:name=".ui.auth.AuthActivity" />
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/Theme.Exciteon.Blue">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

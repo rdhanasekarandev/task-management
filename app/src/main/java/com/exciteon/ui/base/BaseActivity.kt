@@ -18,7 +18,7 @@ abstract class BaseActivity<T : ViewDataBinding,V : BaseViewModel<*>> : AppCompa
         private set
     private var mViewModel: V? = null
     private var snackbar: Snackbar? = null
-    private var topView: View? = null
+    var topView: View? = null
 
     /**
      * Override for set binding variable

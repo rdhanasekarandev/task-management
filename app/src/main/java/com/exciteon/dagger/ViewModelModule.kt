@@ -12,7 +12,12 @@ import com.exciteon.ui.auth.otp.CreateOtpViewModel
 import com.exciteon.ui.auth.otp.LoginOtpViewModel
 import com.exciteon.ui.auth.password.CreatePasswordViewModel
 import com.exciteon.ui.auth.password.LoginPasswordViewModel
+import com.exciteon.ui.board.BoardViewModel
+import com.exciteon.ui.home.HomeViewModel
+import com.exciteon.ui.home.HomeViewModel_Factory
+import com.exciteon.ui.projects.ProjectsViewModel
 import com.exciteon.ui.splash.SplashViewModel
+import com.exciteon.ui.tasks.TasksViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -65,6 +70,26 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(NameViewModel::class)
     abstract fun bindNameViewModel(nameViewModel: NameViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(BoardViewModel::class)
+    abstract fun bindBoardViewModel(boardViewModel: BoardViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(TasksViewModel::class)
+    abstract fun bindTasksViewModel(tasksViewModel: TasksViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(ProjectsViewModel::class)
+    abstract fun bindProjectsViewModel(projectsViewModel: ProjectsViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(HomeViewModel::class)
+    abstract fun bindHomeViewModel(homeViewModel: HomeViewModel): ViewModel
 
     @Binds
     abstract fun bindViewModelFactory(factory: AppViewModelFactory): ViewModelProvider.Factory
